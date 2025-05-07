@@ -14,6 +14,8 @@ class Array
         Array(Array const &src);
 		Array	&operator=(Array const &rhs);
 		~Array(void);
+        T		&operator[](unsigned int i);
+		T		&operator[](unsigned int i) const;
         T				*getAddress() const;
         unsigned int	getSize() const;
         unsigned int size(void) const;
@@ -24,6 +26,6 @@ class Array
 		};
 };
 
-#include "Array.tpp"
+#include "../sources/Array.tpp"
 
 #endif
