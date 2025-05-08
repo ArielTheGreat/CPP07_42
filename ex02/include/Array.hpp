@@ -17,7 +17,6 @@ class Array
         T		&operator[](unsigned int i);
 		T		&operator[](unsigned int i) const;
         T				*getAddress() const;
-        unsigned int	getSize() const;
         unsigned int size(void) const;
         class IndexOutOfRangeException : public std::exception
 		{
